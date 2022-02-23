@@ -1,0 +1,42 @@
+<!--TAREA: En otro archivo html (no Index) y otro archivo js (no tarea-clase-5.js),
+creá un formulario que capture el primer nombre, segundo nombre, apellido/s y edad del usuario
+también vamos a crear un <h1> que diga Bienvenido!
+vas a crear un botón de acción que una vez que lo apretás, va a
+mostrar toda la información junta en un campo de texto
+Y va a cambiar el <h1> para decir "Bienvenido, nombreDeUsuario"!-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tarea 2: Bienvenida</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div>
+        <ul>
+            <li>
+                <h1 id="bienvenida">Bienvenido!</h1>
+            </li>
+            <li>
+                <form>
+                    <label for="primer-nombre">Primer nombre</label>
+                    <input type="text" id="primer-nombre">
+                    <label for="segundo-nombre">Segundo nombre</label>
+                    <input type="text" id="segundo-nombre">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido">
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad">
+                    <button type="button" id="ingresar">INGRESAR</button>
+                    <textarea name="textarea" rows="5" cols="50" disabled id="datos-usuario"></textarea>
+                </form>
+            </li>
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

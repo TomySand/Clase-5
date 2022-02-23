@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');
+html {
+    --hijo-background-color: #759cff;
+    --h1-color: #d1f6f7;
+    --input-color: #4761a9;
+    --input-focus-color: #213766;
+    font-family: "Roboto", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background: linear-gradient(352deg, rgb(74, 108, 202) 32%, rgb(139, 168, 243) 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#hijo {
+    background-color: var(--hijo-background-color);
+    border: var(--input-color);
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 0.3rem;
+    box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 1rem 2rem;
+    color: var(--h1-color);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 3rem;
+}
+
+input {
+    background: transparent;
+    outline: 0;
+    border-width: 0 0 3px;
+    border-color: var(--input-color);
+    font-size: 1.5rem;
+    color: var(--input-color);
+    margin: 0.5rem;
+}
+
+#salario-anual:hover,
+#salario-anual:focus,
+#salario-anual:hover::placeholder {
+    border-color: var(--input-focus-color);
+    color: var(--input-focus-color);
+}
+
+::placeholder {
+    color: var(--input-color);
+}
+
+button {
+    background-color: var(--input-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-style: none;
+    border-width: 5px;
+    border-radius: 40px;
+    color: var(--h1-color);
+    border-color: var(--h1-color);
+}
+
+button:hover {
+    background-color: var(--input-focus-color);
+}
+
+#mensaje-error {
+    background-color: var(--input-color);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--h1-color);
+}

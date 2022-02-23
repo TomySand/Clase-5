@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+html {
+    font-family: "Roboto", sans-serif;
+    --font-color: #71787d;
+    --container-background-color: #ff83b9;
+    --hijo-background-color: white;
+}
+
+h2,
+h1,
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2,
+h1,
+label {
+    color: var(--font-color);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: var(--container-background-color);
+}
+
+#hijo {
+    background-color: var(--hijo-background-color);
+    margin: 2rem 0;
+    padding: 0 2rem;
+    border-radius: 15px;
+}
+
+h2 {
+    margin: 2rem 0 0.5rem 0;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+}
+
+::placeholder {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+button {
+    margin: 1rem 0 3rem 0;
+    background-color: var(--container-background-color);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-style: none;
+    font-weight: 700;
+    color: var(--hijo-background-color);
+    ;
+}
+
+button:active {
+    background-color: #d1709a;
+}
+
+strong {
+    background-color: var(--container-background-color);
+    padding: 0 0.5rem;
+    border-radius: 5px;
+}
