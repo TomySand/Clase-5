@@ -8,11 +8,11 @@
 
 
 document.querySelector('#ingresar').onclick = function() {
-    let $primerNombre = document.querySelector("#primer-nombre").value;
-    let $segundoNombre = document.querySelector("#segundo-nombre").value;
-    let $apellido = document.querySelector("#apellido").value;
-    let $edad = document.querySelector("#edad").value;
-    document.querySelector("#bienvenida").innerText = `Bienvenido, ${$primerNombre} ${$segundoNombre} ${$apellido}!`
-    document.querySelector("#datos-usuario").value = `Tu nombre es ${$primerNombre} ${$segundoNombre} ${$apellido} y tenes ${$edad} años.`
+    let primerNombre = document.querySelector("#primer-nombre").value;
+    let segundoNombre = document.querySelector("#segundo-nombre").value;
+    let apellido = document.querySelector("#apellido").value;
+    let edad = document.querySelector("#edad").value;
+    document.querySelector("#bienvenida").innerText = `Bienvenido, ${primerNombre} ${segundoNombre} ${apellido}!`
+    document.querySelector("#datos-usuario").value = `Tu nombre es ${primerNombre} ${segundoNombre} ${apellido} y tenes ${edad} años.`
 
 }

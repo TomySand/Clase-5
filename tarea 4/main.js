@@ -38,31 +38,36 @@ function calcularNumeroMasGrande(array) {
 
 function calcularNumeroMasRepetido(array) {
     let contadorRepeticiones = 0;
-    let RepeticionesDelMasFrecuente = 0;
-    let = NumeroMasRepetido = 0;
+    let repeticionesDelMasFrecuente = 0;
+    let numeroMasRepetido = 0;
     for (let i = 0; i < array.length; i++) {
         for (let j = 0; j < array.length; j++) {
             if (array[i] == array[j]) {
                 contadorRepeticiones++;
             }
-            if (contadorRepeticiones > RepeticionesDelMasFrecuente) {
-                RepeticionesDelMasFrecuente = contadorRepeticiones;
-                NumeroMasRepetido = array[i];
+            if (contadorRepeticiones > repeticionesDelMasFrecuente) {
+                repeticionesDelMasFrecuente = contadorRepeticiones;
+                numeroMasRepetido = array[i];
             }
         }
         contadorRepeticiones = 0
     }
-    return NumeroMasRepetido
+    return numeroMasRepetido
 }
+
+function obtenerArray(nodelist) {
+    let array = [];
+    for (let i = 0; i < nodelist.length; i++) {
+        array.push(Number(nodelist[i].innerText));
+    }
+    return array;
+};
+
 
 
 
 let $numeros = document.querySelectorAll(".numero");
-let arrayDeNumeros = [];
-
-for (let i = 0; i < $numeros.length; i++) {
-    arrayDeNumeros.push(Number($numeros[i].innerText));
-};
+let arrayDeNumeros = obtenerArray($numeros);
 
 
 document.querySelector("#calcular").onclick = function() {

@@ -8,7 +8,7 @@ function calcularSalarioMensual(salarioAnual) {
 }
 
 document.querySelector('#calcular-salario-mensual').onclick = function() {
-    let $salarioAnual = Number((document.querySelector('#salario-anual').value));
-    let $salarioMensual = calcularSalarioMensual($salarioAnual).toFixed(2);
-    document.querySelector('#salario-mensual').value = $salarioMensual;
+    let salarioAnual = Number((document.querySelector('#salario-anual').value));
+    let salarioMensual = calcularSalarioMensual(salarioAnual).toFixed(2);
+    document.querySelector('#salario-mensual').value = salarioMensual;
 }
